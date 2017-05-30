@@ -74,17 +74,13 @@ p {
   letter-spacing: 1px;
   color: #fdcc52;
 }
-.fa .fa-github {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #fcbd20;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-size: 12px;
+  line-height: 36px;
   color: #222222;
   padding: 8px 10px;
 }
@@ -167,7 +163,7 @@ header {
 }
 header .header-content {
   text-align: center;
-  padding: 150px 0 50px;
+  padding: 100px 0 50px;
   position: relative;
 }
 header .header-content .header-content-inner {
