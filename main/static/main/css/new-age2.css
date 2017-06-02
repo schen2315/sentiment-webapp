@@ -3,6 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
 .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -29,6 +30,12 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #fdcc52;
+}
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid;
 }
 a:hover,
 a:focus {
@@ -59,6 +66,7 @@ p {
   margin-bottom: 20px;
 }
 .navbar-default {
+  display: inline-block;
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
   -webkit-transition: all 0.35s;
@@ -67,6 +75,8 @@ p {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  float: none;
+  vertical-align: top;
 }
 .navbar-default .navbar-header .navbar-brand {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
@@ -74,12 +84,19 @@ p {
   letter-spacing: 1px;
   color: #fdcc52;
 }
+.navbar-header span {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  line-height: 36px;
+}
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #fcbd20;
 }
 .navbar-default .navbar-header .navbar-toggle {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 36px;
   color: #222222;
   padding: 8px 10px;
@@ -201,8 +218,11 @@ header .device-container .screen img {
   }
   header .header-content .header-content-inner {
     max-width: none;
-    margin: 0;
-    position: absolute;
+    margin: 0; 
+    position: absolute; 
+    /*position: relative;*/
+    width: 100%;
+    /*height: 100%;*/
     top: 50%;
     transform: translateY(-50%);
   }
@@ -449,4 +469,13 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.piechart-content {
+  text-align: center;
+}
+.piechart-info {
+  text-align: center;
+}
+.loading-div {
+  text-align: center;
 }
