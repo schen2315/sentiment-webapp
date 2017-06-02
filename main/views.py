@@ -62,9 +62,9 @@ def sentiment(request):
 	location = {'latitude': latitude, 'longitude': longitude}
 	# results = {}
 	results = tweets.search(api, topic, location)
-	results = load_model.predict(results, model, wordset, nfeatures)
-	# print(json.dumps(results))
-	results = results.tolist()
+	if(len(results) != 0):
+		results = load_model.predict(results, model, wordset, nfeatures)
+		results = results.tolist()
 	# calculate results
 	pos = 0
 	neg = 0
@@ -86,11 +86,16 @@ def sentiment(request):
 		'neg': neg/len(results),
 		'neut': neut/len(results)
 	}
+	sentiment = 'Positive'
+	if(score <= 0.3):
+		sentiment = 'Negative'
+	elif(score <= 0.7):
+		sentiment = 'Neutral'
 
 	# console.log('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyAugfU7jM-hmbo0SwSCiuUDBfKA_on8k6I')
 	# return {'topic': topic, 'geolocation': geolocation}
 	# return JsonResponse({'topic': topic, 'latitude': latitude, 'longitude': longitude})
-	return JsonResponse({'score': score, 'ratios': ratios})
+	return JsonResponse({'score': score, 'ratios': ratios, 'sentiment': sentiment})
 
 
 

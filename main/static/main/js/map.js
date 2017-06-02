@@ -47,6 +47,12 @@ function get_sentiment() {
       $loading_div.hide()
       pie.fillChart(data.ratios.pos, data.ratios.neg, data.ratios.neut)
       $piechart_score.text("Total Score: " + data.score)
+      $piechart_sentiment.text("Overall " + data.sentiment + " sentiment towards " + $txt_topic.text() + " in " + $txt_location.text())
+    },
+    error: function(data) {
+      $loading_div.hide()
+      $piechart.hide()
+      $piechart_score.text("Sorry, there was an error with your particular search")
     }
   })
 }
@@ -57,8 +63,10 @@ function get_sentiment() {
   //only in map.html
   $txt_location = $(".txt-location")
   $txt_topic = $(".txt-topic")
+  $piechart = $(".piechart")
   $loading_div = $(".loading-div")
   $piechart_score = $(".piechart-score")
+  $piechart_sentiment = $(".piechart-sentiment")
 
   $nav_btn.on('click', get_location_topic);
   $nav_location.on('keyup', press_enter)
