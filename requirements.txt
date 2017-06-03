@@ -6,6 +6,7 @@ Django==1.11.2
 future==0.16.0
 idna==2.5
 lxml==3.7.3
+nltk==3.2.4
 numpy==1.12.1
 oauthlib==2.0.2
 pandas==0.20.1
