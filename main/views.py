@@ -4,13 +4,25 @@ from sklearn.externals import joblib
 import json
 import twitter
 import sys
+import os
 from django.http import JsonResponse
 sys.path.append('sentiment-analysis')
 # sys.path.append('main/static')
 # sys.path.append('main/static/main/sentiment-analysis')
 
 import tweets
-import keys
+import imp
+try:
+	from keys import consumer_key
+	from keys import consumer_secret
+	from keys import access_token
+	from keys import access_token_secret
+except ModuleNotFoundError:
+	consumer_key = os.environ.get['consumer_key']
+	consumer_secret = os.environ.get['consumer_secret']
+	access_token = os.environ.get['access_token']
+	access_token_secret = os.environ.get['access_token_secret']
+
 import load_model
 # on startup
 # load in the model
@@ -25,10 +37,10 @@ nfeatures = len(features)
 for i in range(0, nfeatures):
 	wordset[features[i]] = i
 
-api = twitter.Api(consumer_key=keys.consumer_key,
-                  consumer_secret=keys.consumer_secret,
-                  access_token_key=keys.access_token,
-                  access_token_secret=keys.access_token_secret)
+api = twitter.Api(consumer_key=consumer_key,
+                  consumer_secret=consumer_secret,
+                  access_token_key=access_token,
+                  access_token_secret=access_token_secret)
 
 
 # Create your views here.
