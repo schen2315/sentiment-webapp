@@ -25,7 +25,7 @@ SECRET_KEY = '474ih_mh@-ouh+-s59yod$+zx_zzfynqv$%@yh8i!79a)!w5^a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['enigmatic-bayou-56624.herokuapp.com']
 
 
 # Application definition
