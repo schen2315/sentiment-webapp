@@ -1,0 +1,3 @@
+[submodule "sentiment-analysis"]
+	path = sentiment-analysis
+	url = ./sentiment-analysis
