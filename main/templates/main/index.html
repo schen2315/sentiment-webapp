@@ -70,7 +70,7 @@
 
     <header>
         <div class="container">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-4">
                 <div class="header-content">
                     <!-- <div class="header-content-inner">
                         <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 col-xs-8">
                 <div class="header-content">
                     <!-- <div class="header-content-inner">
                         <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
@@ -108,111 +108,52 @@
         </div>
     </header>
 
-    <section id="download" class="download bg-primary text-center">
+    <section class="download bg-primary text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!</p>
-                    <div class="badges">
+
+                    <h2 class="section-heading">Discover what all the chirps are about!</h2>
+                    <p>Find the overall sentiment towards a subject on a negative to postive scale by searching a topic and place. This application gets recent tweets about searched topic in a given location and performs sentiment analysis on each tweet to calculate an overal sentiment score.</p>
+                    <!-- <div class="badges">
                         <a class="badge-link" href="#"><img src="{% static 'main/img/google-play-badge.svg' %}" alt=""></a>
                         <a class="badge-link" href="#"><img src="{% static 'main/img/app-store-badge.svg' %}" alt=""></a>
-                    </div>
+                    </div> -->
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="{% static 'main/img/demo-screen-1.jpg' %}" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="cta">
-        <div class="cta-content">
+    <section class="cta text-center">
+<!--         <div class="cta-content">
             <div class="container">
                 <h2>Stop waiting.<br>Start building.</h2>
                 <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
             </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
-
-    <section id="contact" class="contact bg-primary">
-        <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-            <ul class="list-inline list-social">
-                <li class="social-twitter">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-            </ul>
+        </div> -->
+        <!-- <div class="overlay"></div> -->
+        <div class="cta-content">
+            <div class="container">
+                <h2>Built With these Technologies ...</h2>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img src="http://www.iconninja.com/files/47/304/893/twitter-social-media-online-icon.svg" style="height: 100%; width: 100%">
+                    <p>Twitter Search API</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://cdn.worldvectorlogo.com/logos/django.svg" style="height: 100%; width: 80%">
+                    <p>django</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img src="http://pointclearmedia.com/th1s/wp-content/uploads/2014/12/Google_Maps_Logo.svg_.png" style="height: 100%; width: 100%">
+                    <p>Google Maps API</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://avatars2.githubusercontent.com/u/365630?v=3&s=400" style="height: 100%; width: 100%">
+                    <p>Scikit Learn</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -232,11 +173,9 @@
             </ul>
         </div>
     </footer>
-
+    <!-- jQuery -->
     <script type="text/javascript" src="{% static 'main/bower_components/jquery/dist/jquery.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'main/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-    <!-- jQuery -->
-    <!-- // <script src="lib/jquery/jquery.min.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
     <!-- // <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->

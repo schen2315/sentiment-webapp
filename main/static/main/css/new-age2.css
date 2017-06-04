@@ -170,6 +170,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
+  /*background: url("../img/bg-pattern.png"), #7b4397;*/
   background: url("../img/bg-pattern.png"), #7b4397;
   /* fallback for old browsers */
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
@@ -319,28 +320,29 @@ section.features .feature-item i {
 }
 section.cta {
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/bg-cta.jpg');
-  padding: 250px 0;
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-position: center;*/
+  background-color: #FFF7C0;
+  /*background-image: url('../img/bg-cta.jpg');*/
+  /*padding: 250px 0;*/
 }
 section.cta .cta-content {
   position: relative;
   z-index: 1;
 }
-section.cta .cta-content h2 {
+section.cta .cta-content {
   margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-  max-width: 450px;
-  font-size: 50px;
+  /*margin-bottom: 25px;*/
+  color: #4ABDAC;
+  /*max-width: 450px;*/
+  /*font-size: 50px;*/
 }
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 section.cta .overlay {
@@ -415,9 +417,10 @@ footer ul li a.active {
   text-decoration: none;
 }
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  /*background: #fdcc52;*/
+  /*background: -webkit-linear-gradient(#fdcc52, #fdc539);*/
+  /*background: linear-gradient(#fdcc52, #fdc539);*/
+  background: #4ABDAC;
 }
 .text-primary {
   color: #fdcc52;
